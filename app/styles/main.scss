@@ -21,12 +21,14 @@ body {
 }
 
 .layout {
+  min-width: 1250px;
   background: url('../images/layout_bg.jpg') no-repeat center 1090px;
 }
 
 .b-header {
+  overflow: hidden;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 270px;
 
   &:before {
     position: absolute;
@@ -198,5 +200,14 @@ body {
     height: 85px;
     margin: 0 auto;
     background: url(../images/footer_logo.png) no-repeat;
+  }
+}
+
+#video {
+  margin: 0 auto;
+  display: block;
+
+  @media screen and (max-width: 1000px) {
+    // display: none;
   }
 }
